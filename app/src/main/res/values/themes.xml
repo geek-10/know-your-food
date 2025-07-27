@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KnowYourFood" parent="Theme.Material3.DayNight.NoActionBar">
+         Customize your light theme here.
+<!--        setting the navigation bar at the bottom to transperant-->
+        <item name="android:navigationBarColor">
+            @color/fill_transparent
+        </item>
+
+        <item name="android:statusBarColor">
+            @color/fill_transparent
+        </item>
+
+        <item name="android:windowLightStatusBar">
+            true
+        </item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+    <style name="Theme.KnowYourFood" parent="Base.Theme.KnowYourFood" />
+
+</resources>

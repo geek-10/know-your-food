@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".WelcomeScreen">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/for_textlogo_v2"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcome_screen_chef_animation"
+        android:layout_width="308dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/chef_animation"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/amita_bold"
+        android:text="@string/welcome"
+        android:textColor="@color/welcome_text_color"
+        android:textSize="55sp"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_screen_chef_animation"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/kreon_bold"
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_goldenshade"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/welcome_screen_trigger_login"
+        android:layout_width="330dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/trigger_button_shape"
+        android:drawableEnd="@drawable/arrow"
+        android:fontFamily="@font/kreon_bold"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/login"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_greyshade"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/kreon_bold"
+        android:text="@string/signup_text"
+        android:textColor="@color/text_color_goldenshade"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_screen_trigger_login"
+        tools:layout_editor_absoluteX="104dp" />
+
+    <TextView
+        android:id="@+id/welcome_screen_trigger_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/kreon_bold"
+        android:text="@string/signup"
+        android:textColor="@color/ui_elements_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_screen_trigger_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

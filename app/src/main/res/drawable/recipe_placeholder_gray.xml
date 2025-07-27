@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#dfdfdf" /> <!-- A9A9A9 is a hex representation of gray color -->
+    <corners android:radius="10dp"/>
+</shape>

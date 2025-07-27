@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/main_color"
+    tools:context=".SignUpScreen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="256dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="117dp"
+        app:srcCompat="@drawable/for_textlogo_v2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/kreon_bold"
+        android:text="@string/signup_screen_text"
+        android:textSize="24sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_field"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_shape"
+        app:boxStrokeColor="@color/text_color_goldenshade"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="5dp"
+        app:shapeAppearance="@style/Rounded"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_for_username"
+            android:layout_width="330dp"
+            android:layout_height="69dp"
+            android:fontFamily="@font/kreon_bold"
+            android:imeOptions="actionNext"
+            android:hint="@string/inputfield_name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/text_color_goldenshade"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:id="@+id/email_field"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="20dp"
+        app:boxStrokeWidthFocused="5dp"
+        app:boxStrokeWidth="0dp"
+        app:shapeAppearance="@style/Rounded"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/text_color_goldenshade"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusBottomEnd="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="330dp"
+            android:layout_height="69dp"
+            android:id="@+id/input_for_email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/inputfield_email"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/kreon_bold"
+            android:textColorHint="@color/text_color_goldenshade"
+            android:textSize="20sp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:id="@+id/password_field"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="20dp"
+        app:boxStrokeWidthFocused="5dp"
+        app:boxStrokeWidth="0dp"
+        app:passwordToggleEnabled="true"
+        app:shapeAppearance="@style/Rounded"
+        app:boxStrokeColor="@color/text_color_goldenshade"
+        app:endIconMode="password_toggle"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxBackgroundColor="@color/white"
+        app:passwordToggleDrawable="@drawable/password_toggle_selector">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="330dp"
+            android:layout_height="69dp"
+            android:id="@+id/input_for_password"
+            android:inputType="textPassword"
+            android:hint="@string/inputfield_password"
+            android:fontFamily="@font/kreon_bold"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/text_color_goldenshade"
+            android:textSize="20sp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="330dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/signup_screen_trigger_signup"
+        android:background="@drawable/trigger_button_shape"
+        android:fontFamily="@font/kreon_bold"
+        android:text="@string/signup"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_greyshade"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:fontFamily="@font/kreon_bold"
+        android:text="@string/signup_with_text"
+        android:textSize="18sp"
+        android:textColor="@color/text_color_goldenshade"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_screen_trigger_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/google_button"
+        android:drawableStart="@drawable/google"
+        android:paddingHorizontal="36dp" />
+
+
+</LinearLayout>

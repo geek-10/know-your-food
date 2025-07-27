@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="10dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".saved_content_fragement"
+
+    >
+
+
+
+        <ImageView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/saved_thumbnail"
+            android:layout_width="410dp"
+            android:layout_height="200dp"
+            android:src="@drawable/recipe_placeholder_gray"
+            />
+
+        <TextView
+            android:id="@+id/recipeTitle"
+            app:layout_constraintBottom_toBottomOf="@id/saved_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Title"
+            android:fontFamily="@font/kreon"
+            android:background="@drawable/saved_textbox_blur_background"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/recipe_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1h2m"
+            android:background="@drawable/roundborder4_backdrop"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/saved_thumbnail"
+            android:layout_marginEnd="18dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="9dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginBottom="16dp"
+            />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

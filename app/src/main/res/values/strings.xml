@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KnowYourFood</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_text">Your one stop to discover delicious recipes</string>
+    <string name="login">login</string>
+    <string name="signup_text">Not yet registered ?</string>
+    <string name="signup">Sign up</string>
+    <string name="signup_screen_text">Create your Account</string>
+    <string name="inputfield_name">Name</string>
+    <string name="inputfield_email">Email</string>
+    <string name="inputfield_password">Password</string>
+    <string name="signup_with_text">- Or sign up with -</string>
+    <string name="login_screen_text">Login to your Account</string>
+    <string name="signin">Sign in</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="forgot_password_screen">Forgot Password</string>
+    <string name="forgot_password_screen_text">Please enter your registered email to receive a verification link</string>
+    <string name="send">Send</string>
+    <string name="forgot_password_success">Please check your Inbox!</string>
+    <string name="success">Done!</string>
+    <string name="logout">Logout</string>
+
+</resources>
